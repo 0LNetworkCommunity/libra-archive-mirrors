@@ -1,4 +1,4 @@
-# Libra Archive Sources
+# Libra Archive Mirror
 Publicly Accessible Libra Archives provided by community members. All archives should be accessible by common S3 compatible storage tools (e.g. AWS cli, `rclone`);
 
 # 0D
