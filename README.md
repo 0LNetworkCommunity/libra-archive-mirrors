@@ -16,7 +16,7 @@ rclone config
 ```
 # note the example name "remote-mirror" is whatever you entered in the config step above
 # however "libra-archives" cannot be changed, it is the name of the hosted bucket
-rclone sync remote-mirror:libra-archives ./path/to/local
+rclone sync remote-mirror:libra-archives ./path/to/local --progress
 ```
 
 # create own mirror 
