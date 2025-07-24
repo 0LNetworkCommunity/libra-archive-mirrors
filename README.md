@@ -1,6 +1,12 @@
 # Libra Archive Mirror
 Publicly Accessible Libra Archives provided by community members. All archives should be accessible by common S3 compatible storage tools (e.g. AWS cli, `rclone`);
 
+## Contents
+1. `archive-node-databases`: node db backups (the files saved on disk) for end state of v5, v6, and ongoing for v7 network.
+2. `epoch-archive`: archive of the github repo for daily backup files in formats of v6 and v7
+3. `v5-json-transactions` transactions as saved by the v5 explorer.
+
+
 # Quick Start
 Examples using `rclone` https://rclone.org/
 
