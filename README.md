@@ -29,7 +29,8 @@ rclone sync remote-mirror:libra-archives ./path/to/local --progress
 # create own mirror 
 Does a server to server copy, without passing through local host
 ```
-# note: the name "my-mirror" refers to whatever you entered in the config step above
+# note: the name "my-mirror" refers to whatever you entered in the rclone config step above
+# important: always call your bucket `libra-archives` for consisency so others can sync
 rclone sync remote-mirror:libra-archives my-mirror:libra-archives
 ```
 
@@ -56,9 +57,7 @@ libra ops storage db backup continuously --command-adapter-config <path/to>/rclo
 
 
 # Sources
-## 0D
-Digital Ocean Spaces
-
+## 0D - Digital Ocean
 Endpoint
 https://libra-archives.nyc3.digitaloceanspaces.com
 
@@ -70,3 +69,17 @@ DO801YTLHT9FZ6N3U7BK
 
 Secret Key:
 8NiBqCi8XFrdCO/HVOEfQy00vIJ3SRq9r8MLyJjrhKg
+
+## 0D - Cloudflare
+
+Endpoint
+https://afcdb03dd0764818ac9aec7fe0c0b8b5.r2.cloudflarestorage.com
+
+bucket:
+libra-archives
+
+Key ID: 
+f60833651da1504ecdff70053e6a5120
+
+Secret Key:
+8c1e4ed3724e6a5c2bc41059f0041900788ad9f406f39a3e30d83231288db717
