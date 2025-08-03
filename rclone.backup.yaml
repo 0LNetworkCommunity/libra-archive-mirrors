@@ -7,9 +7,9 @@ env_vars:
     value: "my-s3-config"
   - key: "BUCKET"
     # the namespace of the bucket
-    value: "libra-continuous"
+    value: "libra-archives"
   - key: "SUB_DIR"
-    value: "backup"
+    value: "current-continuous"
 
 commands:
   create_backup: |
