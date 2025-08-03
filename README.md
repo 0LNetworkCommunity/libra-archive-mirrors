@@ -39,7 +39,8 @@ The diem backup cli tool has a continuous streaming service for backing up to a 
 We have a standard file for using `rclone` to connect to any S3 compatible service. See `rclone.backup.yaml` in this repo.
 This file serves as a dictionary to system tools which are used to compress (gzip) and save (rclone) files afer calling the diem-node backup service port.
 
-You must modify the "REMOTE" and "BUCKET" names to reflect your local rclone configuration.
+You must modify the "REMOTE" reflect your local rclone configuration. By convention "BUCKET" should be called `libra-archives`, and the "SUB_DIR" to `current-continuous`. 
+
 IMPORTANT: If the commands in rclone.backup.yaml are modified, it is not guaranteed to work with any previous backups hosted by community members
 
 ## restoring
