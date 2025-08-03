@@ -2,8 +2,8 @@
 Publicly Accessible Libra Archives provided by community members. All archives should be accessible by common S3 compatible storage tools (e.g. AWS cli, `rclone`);
 
 ## Contents
-1. `continuous-backup`: diem backup format. A continuous backup since genesis of V7, to be used with streaming backup cli. For uses with `continuous` restores
-1. `oneoff-epoch-archive`: diem backup format. An archive of the github repo for daily backup files in formats of v6 and v7. For use with `oneoff` restores, e.g. twin testnet.
+1. `current-continuous`: diem backup format. A continuous backup since V7 upgrade, to be used with streaming backup cli. For uses with `continuous` restores
+1. `epoch-archive`: diem backup format. An archive of the github repo for daily backup files in formats of v5, v6, and v7. For use with `oneoff` restores, e.g. twin testnet.
 1. `db-snapshots`: rocks db local files. These are local files as saved on disk on a diem node. Includes end state of v5, v6, and ongoing for v7/8 network.
 1. `explorer-data`: json files. All v5 transactions as saved from the v5 explorer.
 
