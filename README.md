@@ -58,29 +58,28 @@ libra ops storage db backup continuously --command-adapter-config <path/to>/rclo
 
 
 # Sources
+Sample rclone config files found at: `$HOME/.config/rclone/rclone.conf`
+
 ## 0D - Digital Ocean
-Endpoint
-https://libra-archives.nyc3.digitaloceanspaces.com
-
-bucket:
-libra-archives
-
-Key ID: 
-DO801YTLHT9FZ6N3U7BK
-
-Secret Key:
-8NiBqCi8XFrdCO/HVOEfQy00vIJ3SRq9r8MLyJjrhKg
+```
+[do-od-remote]
+type = s3
+provider = DigitalOcean
+access_key_id = DO801YTLHT9FZ6N3U7BK
+secret_access_key = 8NiBqCi8XFrdCO/HVOEfQy00vIJ3SRq9r8MLyJjrhKg
+endpoint = nyc3.digitaloceanspaces.com
+acl = private
+```
 
 ## 0D - Cloudflare
 
-Endpoint
-https://afcdb03dd0764818ac9aec7fe0c0b8b5.r2.cloudflarestorage.com
+```
+[cf-od-remote]
+type = s3
+provider = Cloudflare
+access_key_id = f60833651da1504ecdff70053e6a5120
+secret_access_key = 8c1e4ed3724e6a5c2bc41059f0041900788ad9f406f39a3e30d83231288db717
+endpoint = https://afcdb03dd0764818ac9aec7fe0c0b8b5.r2.cloudflarestorage.com
+acl = private
+```
 
-bucket:
-libra-archives
-
-Key ID: 
-f60833651da1504ecdff70053e6a5120
-
-Secret Key:
-8c1e4ed3724e6a5c2bc41059f0041900788ad9f406f39a3e30d83231288db717
