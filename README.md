@@ -27,7 +27,7 @@ rclone sync remote-mirror:libra-archives ./path/to/local --progress
 ```
 
 # create own mirror 
-Does a server to server copy, without passing through local host
+Does a server to server copy, without making a copy on the local host
 ```
 # note: the name "my-mirror" refers to whatever you entered in the rclone config step above
 # important: always call your bucket `libra-archives` for consisency so others can sync
